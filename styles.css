@@ -1,0 +1,213 @@
+.homepage {
+    background-color: rgba(250, 245, 232);
+    height: 100vh;
+}
+
+
+
+* {
+    font-family: "*****";
+    box-sizing: border-box;
+    /* match the charcoal color of the text in logo */
+    color: #272827;
+}
+
+
+.fancyFadeIn {
+    height: 100%;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    /* delay to control when it starts */
+    animation-delay: 0.2s;
+    visibility: hidden;
+}
+
+/* called by .fancyFadeIn */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+#homepageContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    /* negative margin accounts for whitespace at the top of the image */
+    margin-top: -100px;
+}
+
+nav {
+    text-align: center;
+    font-size: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav a,
+#resumeButton a {
+    font-family: "itc-american-typewriter";
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration-line: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+nav a:hover,
+a.active {
+    text-decoration-line: underline;
+    text-decoration-thickness: 6px;
+}
+
+nav .logo {
+    margin-top: 0;
+
+}
+
+.innerNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: rgb(154, 188, 164);
+}
+
+.tagline {
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.diamond {
+
+    color: rgba(221, 43, 41);
+
+
+}
+
+
+
+
+.mainpage {
+
+    background-color: rgba(250, 245, 232);
+    margin-top: 0%;
+
+
+}
+
+
+
+
+
+.mainlogo {
+    margin-top: -25px;
+    padding: 0%;
+
+}
+
+.mainnav {
+    overflow: hidden;
+    margin-top: -15px;
+
+
+
+}
+
+.mainnav ul {
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    text-align: center;
+
+    font-size: 17px;
+
+
+}
+
+.mainnav ul a {
+    text-decoration: none;
+}
+
+.mapmarker {
+    overflow: hidden;
+
+
+
+}
+
+.mapmarker ul {
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    text-align: center;
+
+    font-size: 17px;
+
+
+}
+
+.cards div {
+
+    margin: 20px;
+    background: #9d9999;
+    /* padding: 30px; BORDER IN CASE THEY PREFER THAT*/
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.cards :hover {
+
+    opacity: 50%;
+
+
+
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.cards img {
+    /* with max-width, we are saying that ideally we want 320px unless the container is less than 320px */
+    width: 240px;
+    max-width: 100%;
+    height: 320px;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+
+.fcom,
+.arc,
+.central,
+.amigos {
+
+    background-color: rgba(250, 245, 232);
+
+
+}
