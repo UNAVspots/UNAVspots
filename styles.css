@@ -1,6 +1,14 @@
+.fullsite {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+
 .homepage {
     background-color: rgba(250, 245, 232);
     height: 100vh;
+    scroll-snap-align: start;
 }
 
 
@@ -29,6 +37,8 @@
         visibility: visible;
     }
 }
+
+
 
 #homepageContent {
     display: flex;
@@ -111,9 +121,14 @@ nav .logo {
 
     background-color: rgba(250, 245, 232);
     margin-top: 0%;
-
+    scroll-snap-align: start;
+    height: 100vh;
+    overflow-y: scroll;
 
 }
+
+
+
 
 
 
@@ -131,6 +146,7 @@ nav .logo {
 
 
 
+
 }
 
 .mainnav ul {
@@ -139,13 +155,20 @@ nav .logo {
     color: black;
     text-align: center;
 
-    font-size: 17px;
+    font-size: 22px;
 
 
 }
 
 .mainnav ul a {
     text-decoration: none;
+}
+
+.mainnav ul :hover {
+
+
+    text-decoration: underline;
+
 }
 
 .mapmarker {
@@ -188,11 +211,13 @@ nav .logo {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    opacity: 80%;
+
 }
 
 .cards img {
     /* with max-width, we are saying that ideally we want 320px unless the container is less than 320px */
-    width: 240px;
+    width: 320px;
     max-width: 100%;
     height: 320px;
     object-fit: cover;
@@ -201,11 +226,134 @@ nav .logo {
     border-radius: 5px;
 }
 
+section {
 
-.fcom,
-.arc,
-.central,
-.amigos {
+    padding: 100px;
+    text-align: center;
+
+
+}
+
+
+
+section img {
+
+    width: 700px;
+    height: 300px;
+    padding: 50px;
+}
+
+
+.mapheader {
+
+    padding-top: 150px;
+
+
+
+
+}
+
+.map {
+
+    width: 800px;
+    height: 600px;
+
+}
+
+
+section p {
+
+    font-size: 20px;
+
+
+
+}
+
+
+
+
+
+.footer {
+
+    text-align: center;
+
+
+}
+
+footer {
+
+    padding: 50px;
+
+}
+
+footer a img {
+
+    width: 40px;
+
+
+
+}
+
+
+.tiles {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px;
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+    margin: 70px;
+}
+
+.tiles img {
+    width: 30%;
+
+    height: auto;
+    border-radius: 8px;
+}
+
+.tiles .text {
+    flex: 1;
+
+}
+
+.tilesreverse {
+
+    display: flex;
+
+    flex-direction: row-reverse;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px;
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+    margin: 70px;
+
+
+
+}
+
+.tilesreverse img {
+    width: 30%;
+    /* control image size */
+    height: auto;
+    border-radius: 8px;
+}
+
+.tilesreverse .text {
+    flex: 1;
+    /* text takes remaining space */
+}
+
+.estudiar,
+.comer,
+.relajar {
 
     background-color: rgba(250, 245, 232);
 
