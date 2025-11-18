@@ -421,8 +421,7 @@ footer a img {
     .mobile {
 
         display: none;
-        width: 200px;
-        height: 100px;
+
 
     }
 }
@@ -482,11 +481,7 @@ footer a img {
 
     .cards {
         display: none;
-        flex-wrap: wrap;
-        width: 70%;
 
-        justify-content: center;
-        opacity: 80%;
 
     }
 
