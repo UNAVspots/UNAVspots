@@ -52,6 +52,15 @@
     justify-content: center;
     /* negative margin accounts for whitespace at the top of the image */
     margin-top: -100px;
+
+}
+
+.logo img {
+
+    width: 300px;
+    height: 300px;
+
+
 }
 
 nav {
@@ -236,11 +245,17 @@ section {
 
 
 
-section img {
+.family {
 
-    width: 700px;
-    height: 300px;
-    padding: 50px;
+    width: 400px;
+    height: 400px;
+    padding: 0px;
+    border: 5px solid rgba(221, 43, 41);
+    border-radius: 5px;
+
+
+
+
 }
 
 
@@ -255,8 +270,18 @@ section img {
 
 .map {
 
-    width: 800px;
-    height: 600px;
+    width: 600px;
+    height: 400px;
+    transition: all 1s;
+    cursor: pointer;
+    border: 5px solid black;
+
+}
+
+.box :hover {
+
+    transform: scale(2.2);
+
 
 }
 
@@ -308,6 +333,12 @@ footer a img {
     margin: 70px;
 }
 
+.tiles a:hover {
+
+    color: rgb(157, 17, 17);
+
+}
+
 .tiles img {
     width: 30%;
 
@@ -315,8 +346,31 @@ footer a img {
     border-radius: 8px;
 }
 
-.tiles .text {
+.foto1 {
+
+    height: 200px;
+
+}
+
+.tiles .text p {
     flex: 1;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+
+
+
+
+.tilesreverse h2 {
+
+    font-weight: bolder;
+
+}
+
+.tiles h2 {
+
+    font-weight: bolder;
 
 }
 
@@ -341,14 +395,16 @@ footer a img {
 
 .tilesreverse img {
     width: 30%;
-    /* control image size */
+
     height: auto;
     border-radius: 8px;
 }
 
-.tilesreverse .text {
+.tilesreverse .text p {
     flex: 1;
-    /* text takes remaining space */
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 .estudiar,
@@ -356,6 +412,243 @@ footer a img {
 .relajar {
 
     background-color: rgba(250, 245, 232);
+
+
+}
+
+@media (min-width:781px) {
+
+    .mobile {
+
+        display: none;
+        width: 200px;
+        height: 100px;
+
+    }
+}
+
+@media (max-width: 780px) {
+
+
+    .logo img {
+
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .tagline {
+
+        font-size: medium;
+
+
+
+    }
+
+    .diamond {
+        font-size: medium;
+
+
+    }
+
+    .comienza {
+
+        font-size: smaller;
+
+    }
+
+    .mainlogo img {
+
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+
+    }
+
+    .mainnav ul a {
+
+        font-size: 16px;
+        border: 1px solid black;
+        padding: 3px;
+
+
+    }
+
+    .cards {
+        display: none;
+        flex-wrap: wrap;
+        width: 70%;
+
+        justify-content: center;
+        opacity: 80%;
+
+    }
+
+    .mobile {
+
+        text-align: center;
+
+    }
+
+    .mobile img {
+
+        border: 2px solid black;
+        width: 80%;
+        border-radius: 6px;
+
+
+
+    }
+
+    .mainpage {
+
+        overflow-y: scroll;
+
+
+    }
+
+    .family {
+
+        width: 90%;
+        height: 90%;
+
+    }
+
+    .box img {
+
+        width: 80%;
+        height: 60%;
+
+
+
+    }
+
+
+    .box {
+        transition: transform 0.3s ease;
+    }
+
+    .box.active {
+        transform: scale(2.2);
+    }
+
+
+    .about {
+
+        font-size: 16px;
+        text-align: center;
+
+    }
+
+
+
+
+    .tiles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 10px;
+
+        padding: 10px;
+        border: 1px solid #ccc;
+
+        border-radius: 10px;
+        margin: 70px;
+    }
+
+    .tiles a:hover {
+
+        color: rgb(157, 17, 17);
+
+    }
+
+    .tiles img {
+
+        width: 50%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .foto1 {
+
+        height: 200px;
+
+    }
+
+    .tiles .text p {
+        flex: 1;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+
+    }
+
+
+
+
+    .tilesreverse h2 {
+
+        font-weight: bolder;
+        font-size: medium;
+
+    }
+
+    .tiles h2 {
+        font-size: medium;
+        font-weight: bolder;
+
+    }
+
+    .tilesreverse {
+
+        display: flex;
+
+        flex-direction: column-reverse;
+        align-items: center;
+
+        gap: 20px;
+
+        padding: 20px;
+        border: 1px solid #ccc;
+
+        border-radius: 10px;
+        margin: 70px;
+
+
+
+    }
+
+    .tilesreverse img {
+        width: 50%;
+
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .tilesreverse .text p {
+        flex: 1;
+
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
