@@ -524,6 +524,21 @@ footer a img {
 
     }
 
+    .quienessomos h2 {
+
+        font-size: large;
+        font-weight: bolder;
+
+    }
+
+    .quienessomos h5 {
+
+        font-size: small;
+
+
+    }
+
+
 
     .box {
         transition: transform 0.3s ease;
@@ -537,9 +552,12 @@ footer a img {
     .about {
 
         font-size: 16px;
-        text-align: center;
+        text-align: justify;
+
 
     }
+
+
 
 
 
