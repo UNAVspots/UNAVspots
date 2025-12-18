@@ -393,6 +393,12 @@ footer a img {
 
 }
 
+.tilesreverse a:hover {
+
+    color: rgb(157, 17, 17);
+
+}
+
 .tilesreverse img {
     width: 30%;
 
@@ -415,6 +421,42 @@ footer a img {
 
 
 }
+
+
+
+
+.subir button {
+    margin-top: 200px;
+    background-color: rgba(221, 43, 41);
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 24px;
+
+    font-size: 20px;
+
+    border-radius: 6px;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+
+
+}
+
+.subir button:hover {
+
+    opacity: 50%;
+
+}
+
+.subir {
+
+    text-align: center;
+}
+
+
 
 @media (min-width:781px) {
 
@@ -582,6 +624,13 @@ footer a img {
 
     }
 
+    .tilesreverse a:hover {
+
+        color: rgb(157, 17, 17);
+
+    }
+
+
     .tiles img {
 
         width: 50%;
@@ -650,7 +699,6 @@ footer a img {
         font-family: 'Times New Roman', Times, serif;
         font-size: 16px;
     }
-
 
 
 
